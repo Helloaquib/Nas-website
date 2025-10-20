@@ -166,10 +166,10 @@ img {
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Logo (nav-brand) is on the left, Buttons (nav-actions) are on the right. */
     width: 100%;
     height: 100%;
-    padding: 0 var(--spacing-lg); /* Add this line */
+    padding: 0 var(--spacing-lg);
 }
 
 .nav-brand {
@@ -180,24 +180,26 @@ img {
 }
 
 .logo-container {
-    width: 200px;
-    height: 100px;
+    width: 180px; /* Adjusted width to better contain the logo image and text */
+    height: 100%; /* Now takes full height of the header (80px) */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Ensures logo starts at the left edge of its container */
     overflow: hidden;
-    border-radius: var(--radius-md);
+    /* Removed border-radius as it often interferes with the edge-to-edge look */
 }
 
 .logo-svg {
-    width: 200%;
+    width: 100%; /* Changed to 100% */
     height: 100%;
     color: var(--color-primary);
 }
 
 .logo-container img {
-    width: 200%;
-    height: 100%;
+    /* Adjusted for better containment within a fixed height header */
+    width: auto;
+    max-width: 100%;
+    height: 100%; 
     object-fit: contain;
 }
 
@@ -1181,6 +1183,7 @@ section {
     display: none !important;
 
 }
+
 
 
 
