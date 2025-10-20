@@ -14,16 +14,17 @@
     --color-secondary: #10b981; /* Green for sustainability */
     --color-secondary-dark: #059669;
     
-    --color-background: #ffffff;
-    --color-surface: #f9fafb;
-    --color-surface-alt: #f3f4f6;
+    --color-background: #0f172a;
+    --color-surface: #1e293b;
+    --color-surface-alt: #334155;
     
-    --color-text-primary: #111827;
-    --color-text-secondary: #6b7280;
-    --color-text-tertiary: #9ca3af;
     
-    --color-border: #e5e7eb;
-    --color-border-light: #f3f4f6;
+    --color-text-primary: #f1f5f9;
+    --color-text-secondary: #cbd5e1;
+    --color-text-tertiary: #94a3b8;
+    
+    --color-border: #334155;
+    --color-border-light: #475569;
     
     --color-success: #10b981;
     --color-error: #ef4444;
@@ -53,10 +54,10 @@
     --font-size-5xl: 3rem;
     
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
     
     /* Border radius */
     --radius-sm: 0.25rem;
@@ -1209,3 +1210,4 @@ section {
     display: none !important;
 
 }
+
