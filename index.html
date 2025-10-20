@@ -18,31 +18,27 @@
 <!-- Header -->
 <header class="header" id="header">
     <div class="container">
-        <nav class="nav">
-            <div class="nav-brand">
-                <div class="logo-container" id="logoContainer">
-                    <!-- Default SVG Logo -->
-                    <img src="assets/naz.jpeg" alt="Company Logo">
-                        <rect x="10" y="10" width="5" height="5" fill="currentColor" opacity="0.2" rx="4"/>
-                        <circle cx="30" cy="30" r="15" fill="currentColor"/>
-                        <text x="60" y="38" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="currentColor">NAS</text>
-                    </svg>
+        <nav class="nav" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
+            <div class="nav-brand" style="display: flex; align-items: center; gap: 1rem;">
+                <div class="logo-container" id="logoContainer" style="display: flex; align-items: center;">
+                    <!-- Company Logo Image -->
+                    <img src="assets/naz.jpeg" alt="Company Logo" style="width: 50px; height: 50px; object-fit: contain; border-radius: 4px;">
                 </div>
                 <div class="brand-text">
-                    <span class="company-name"></span>
+                    <span class="company-name" style="font-size: 1.5rem; font-weight: 700; font-family: Poppins, sans-serif;">NAS</span>
                 </div>
             </div>
-            <div class="nav-actions">
-                <label class="upload-logo-btn" for="logoUpload" aria-label="Upload company logo">
+            <div class="nav-actions" style="display: flex; gap: 1.5rem; align-items: center;">
+                <label class="upload-logo-btn" for="logoUpload" aria-label="Upload company logo" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; padding: 0.5rem 1rem; border-radius: 4px; transition: background-color 0.3s; border: 1px solid #ddd;">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                         <polyline points="17 8 12 3 7 8"/>
                         <line x1="12" y1="3" x2="12" y2="15"/>
                     </svg>
-                    <span>Logo</span>
+                    <span style="font-size: 0.9rem;">Logo</span>
                 </label>
                 <input type="file" id="logoUpload" accept="image/*" hidden>
-                <a href="#contact" class="btn btn-primary">Contact Us</a>
+                <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.5rem; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px; font-weight: 500; transition: background-color 0.3s;">Contact Us</a>
             </div>
         </nav>
     </div>
@@ -393,6 +389,7 @@
 </body>
 
 </html>
+
 
 
 
