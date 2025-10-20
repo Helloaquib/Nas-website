@@ -157,15 +157,14 @@ img {
     border-bottom: 1px solid var(--color-border);
     box-shadow: var(--shadow-sm);
     transition: background-color var(--transition-base);
-    padding: 0.5rem 0; /* Reduce vertical padding for a slimmer bar */
+    padding: 0.75rem 0; /* Moderate height for header */
 }
 
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 1.5rem; /* Adjust spacing for compactness */
-    gap: var(--spacing-lg);
+    justify-content: space-between; /* logo on left, button on right */
+    padding: 0 2rem; /* horizontal spacing */
 }
 
 .nav-brand {
@@ -174,9 +173,10 @@ img {
     gap: var(--spacing-md);
 }
 
+/* Bigger logo but still balanced */
 .logo-container {
-    width: 300px; /* increased logo width for better visibility */
-    height: 100px; /* reduced height to fit tighter in the bar */
+    width: 200px;   /* increase width */
+    height: 80px;   /* taller for visibility */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,125 +185,27 @@ img {
 
 .logo-container img {
     width: 100%;
-    height: auto; /* keep aspect ratio */
+    height: auto; /* maintain proportions */
     object-fit: contain;
 }
 
-
-.company-name {
-    font-family: var(--font-family-display);
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    color: var(--color-text-primary);
-}
-
-.nav-actions {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-md);
-}
-
-.theme-toggle {
-    background: none;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: var(--spacing-sm);
-    cursor: pointer;
-    color: var(--color-text-primary);
-    transition: all var(--transition-fast);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.theme-toggle:hover {
-    background-color: var(--color-surface);
-    transform: scale(1.05);
-}
-
-.theme-toggle .sun-icon {
-    display: block;
-}
-
-.theme-toggle .moon-icon {
-    display: none;
-}
-
-[data-theme="dark"] .theme-toggle .sun-icon {
-    display: none;
-}
-
-[data-theme="dark"] .theme-toggle .moon-icon {
-    display: block;
-}
-
-/* .upload-logo-btn {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-xs);
-    padding: var(--spacing-sm) var(--spacing-md);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    background: none;
-    color: var(--color-text-primary);
-    cursor: pointer;
-    transition: all var(--transition-fast);
-    font-size: var(--font-size-sm);
-} */
-
-/* .upload-logo-btn:hover {
-    background-color: var(--color-surface);
-    border-color: var(--color-primary);
-} */
-
-/* Buttons */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-sm) var(--spacing-lg);
-    border: none;
-    border-radius: var(--radius-md);
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-base);
-    font-weight: 500;
-    text-align: center;
-    cursor: pointer;
-    transition: all var(--transition-fast);
-    text-decoration: none;
-}
-
-.btn:focus {
-    outline: 2px solid var(--color-primary);
-    outline-offset: 2px;
-}
-
-.btn-primary {
-    background-color: var(--color-primary);
+/* Contact Us button styling */
+.contact-btn {
+    background-color: #f59e0b; /* orange color */
     color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
-    background-color: var(--color-primary-dark);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+.contact-btn:hover {
+    background-color: #d97706; /* darker shade on hover */
 }
 
-.btn-secondary {
-    background-color: var(--color-surface);
-    color: var(--color-text-primary);
-    border: 1px solid var(--color-border);
-}
-
-.btn-secondary:hover {
-    background-color: var(--color-surface-alt);
-    border-color: var(--color-primary);
-}
-
-.btn-large {
-    padding: var(--spacing-md) var(--spacing-xl);
-    font-size: var(--font-size-lg);
-}
 
 /* Hero Section */
 /* Hero Section */
@@ -1205,6 +1107,7 @@ section {
     display: none !important;
 
 }
+
 
 
 
