@@ -175,8 +175,8 @@ img {
 }
 
 .logo-container {
-    width: 160px; /* increased logo width for better visibility */
-    height: 60px; /* reduced height to fit tighter in the bar */
+    width: 300px; /* increased logo width for better visibility */
+    height: 100px; /* reduced height to fit tighter in the bar */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1205,5 +1205,6 @@ section {
     display: none !important;
 
 }
+
 
 
