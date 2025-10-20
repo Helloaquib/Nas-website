@@ -15,18 +15,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-<header class="header">
-  <nav class="nav">
-    <div class="nav-brand">
-      <div class="logo-container">
-        <img src="your-logo.png" alt="NAS Sales Corporation">
-      </div>
+<!-- Header -->
+<header class="header" id="header">
+    <div class="container">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo-container" id="logoContainer">
+                    <!-- Default SVG Logo -->
+                    <svg class="logo-svg" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="10" width="40" height="40" fill="currentColor" opacity="0.2" rx="4"/>
+                        <circle cx="30" cy="30" r="15" fill="currentColor"/>
+                        <text x="60" y="38" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="currentColor">NAS</text>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="company-name"></span>
+                </div>
+            </div>
+            <div class="nav-actions">
+                <label class="upload-logo-btn" for="logoUpload" aria-label="Upload company logo">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="17 8 12 3 7 8"/>
+                        <line x1="12" y1="3" x2="12" y2="15"/>
+                    </svg>
+                    <span>Logo</span>
+                </label>
+                <input type="file" id="logoUpload" accept="image/*" hidden>
+                <a href="#contact" class="btn btn-primary">Contact Us</a>
+            </div>
+        </nav>
     </div>
-    <button class="contact-btn">Contact Us</button>
-  </nav>
 </header>
-
 
     <!-- Hero Section -->
     <section class="hero" id="hero" >
@@ -373,3 +393,4 @@
 </body>
 
 </html>
+
