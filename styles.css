@@ -180,7 +180,7 @@ img {
 }
 
 .logo-container {
-    width: 100px;
+    width: 200px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -190,13 +190,13 @@ img {
 }
 
 .logo-svg {
-    width: 100%;
+    width: 200%;
     height: 100%;
     color: var(--color-primary);
 }
 
 .logo-container img {
-    width: 100%;
+    width: 200%;
     height: 100%;
     object-fit: contain;
 }
@@ -1181,6 +1181,7 @@ section {
     display: none !important;
 
 }
+
 
 
 
