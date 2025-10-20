@@ -173,7 +173,7 @@ img {
 }
 
 .logo-container {
-    width: 300px;
+    width: 100px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -1207,4 +1207,5 @@ section {
 .product-image-upload,
 #addProductBtn {
     display: none !important;
+
 }
