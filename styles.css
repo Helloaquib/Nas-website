@@ -149,6 +149,7 @@ img {
 }
 
 /* Header */
+/* Header */
 .header {
     position: sticky;
     top: 0;
@@ -157,55 +158,128 @@ img {
     border-bottom: 1px solid var(--color-border);
     box-shadow: var(--shadow-sm);
     transition: background-color var(--transition-base);
-    padding: 0.75rem 0; /* Moderate height for header */
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* logo on left, button on right */
-    padding: 0 2rem; /* horizontal spacing */
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 
 .nav-brand {
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
+    height: 100%;
 }
 
-/* Bigger logo but still balanced */
 .logo-container {
-    width: 200px;   /* increase width */
-    height: 80px;   /* taller for visibility */
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    border-radius: var(--radius-md);
+}
+
+.logo-svg {
+    width: 100%;
+    height: 100%;
+    color: var(--color-primary);
 }
 
 .logo-container img {
     width: 100%;
-    height: auto; /* maintain proportions */
+    height: 100%;
     object-fit: contain;
 }
 
-/* Contact Us button styling */
-.contact-btn {
-    background-color: #f59e0b; /* orange color */
-    color: white;
-    border: none;
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 8px;
+.company-name {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.upload-logo-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: white;
+    color: var(--color-text-primary);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all var(--transition-fast);
+    font-size: var(--font-size-sm);
 }
 
-.contact-btn:hover {
-    background-color: #d97706; /* darker shade on hover */
+.upload-logo-btn:hover {
+    background-color: var(--color-surface);
+    border-color: var(--color-primary);
 }
 
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border: none;
+    border-radius: var(--radius-md);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+}
+
+.btn:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-surface-alt);
+    border-color: var(--color-primary);
+}
+
+.btn-large {
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--font-size-lg);
+}
 
 /* Hero Section */
 /* Hero Section */
@@ -1107,6 +1181,7 @@ section {
     display: none !important;
 
 }
+
 
 
 
