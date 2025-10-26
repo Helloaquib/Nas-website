@@ -8,7 +8,7 @@ const CONFIG = {
     // IMPORTANT: Replace with your WhatsApp number in international format
     // Format: Country code + number (no + sign, no spaces, no dashes)
     // Example: For India +91 1234567890, use: "911234567890"
-    WHATSAPP_NUMBER: "919895697904", // REPLACE THIS
+    WHATSAPP_NUMBER: "919020228121", // REPLACE THIS
     WHATSAPP_MESSAGE: "Hi, I'm interested in your solar and battery solutions.",
     
     // COMPANY LOGO - Add your logo URL or base64 data here
@@ -45,7 +45,7 @@ const BRANDS = [
         logo: "assets/prem.jpeg"
     },
     { 
-        id: 'utl-solar', 
+        id: 'UTL Solar', 
         name: 'UTL Solar', 
         tagline: 'Trusted solar brand', 
         category: 'solar',
@@ -128,56 +128,287 @@ const SAMPLE_PRODUCTS = [
         id: 'Adani',
         title: 'Adani Solar Panles',
         brand: 'Adani',
-        specs: '550W output, 21% efficiency, 25-year warranty',
+        specs: 'High-efficiency monocrystalline solar panel for reliable power generation',
         image: "assets/products/adani panel.png"
     },
     {
         id: 'Waree',
         title: 'Waree Solar Panels',
         brand: 'Waree',
-        specs: '440W polycrystalline, weatherproof, 10-year warranty',
+        specs: 'Durable polycrystalline solar panel for residential and commercial use',
         image: "assets/products/waree panel.png"
     },
     {
-        id: 'Waree',
+        id: 'Waree grid',
         title: 'Waree Grid Tie Inverter',
         brand: 'Waree',
-        specs: '440W polycrystalline, weatherproof, 10-year warranty',
+        specs: 'On-grid inverter for feeding solar power directly to the utility grid',
         image: "assets/products/waree grid tie.png"
     },{
-        id: 'Waree',
+        id: 'Waree hybrid',
         title: 'Waree Hybrid Inverter',
         brand: 'Waree',
-        specs: '440W polycrystalline, weatherproof, 10-year warranty',
+        specs: 'Versatile inverter combining grid-tie and battery backup functionality',
         image: "assets/products/waree hybrid.png"
     },
     {
-        id: 'Premier Energies',
+        id: 'Premier Energies solar',
         title: 'Premier Solar Panels',
         brand: 'Premier Energies',
-        specs: '150Ah capacity, 60-month warranty, deep discharge protection',
+        specs: 'Premium quality solar panels for efficient energy conversion',
         image: "assets/products/primier panel.png"
     },
     {
-        id: 'prod-4',
-        title: 'Exide 150Ah Inva Master Battery',
+        id: 'UTL Solar panels',
+        title: 'UTL Solar Panels',
+        brand: 'UTL Solar',
+        specs: 'Reliable solar panels designed for maximum energy output',
+        image: "assets/products/utl solar panel.png"
+    },
+    {
+        id: 'UTL Solar grid',
+        title: 'UTL Grid Tie Inverter',
+        brand: 'UTL Solar',
+        specs: 'Grid-connected inverter for seamless solar power integration',
+        image: "assets/products/utl grid tie.png"
+    },
+    {
+        id: 'UTL Solar hybrid',
+        title: 'UTL Hybrid Inverter',
+        brand: 'UTL Solar',
+        specs: 'Smart inverter with both grid and battery operation modes',
+        image: "assets/products/utl hybrid.png"
+    },
+    {
+        id: 'UTL Solar offgrid',
+        title: 'UTL Off Grid Inverter',
+        brand: 'UTL Solar',
+        specs: 'Standalone inverter for independent solar power systems',
+        image: "assets/products/utl offgrid.png"
+    },
+    {
+        id: 'UTL Solar lithium',
+        title: 'UTL Lithium Battery',
+        brand: 'UTL Solar',
+        specs: 'Advanced lithium-ion battery for efficient energy storage',
+        image: "assets/products/UTL Lithium battery.jpg"
+    },
+    {
+        id: 'UTL Solar ups',
+        title: 'UTL Online UPS',
+        brand: 'UTL Solar',
+        specs: 'Continuous power supply system with zero transfer time',
+        image: "assets/products/utl online ups.jpeg"
+    },
+    {
+        id: 'UTL Solar charge',
+        title: 'UTL Charge Controller',
+        brand: 'UTL Solar',
+        specs: 'Solar charge regulator for optimal battery charging and protection',
+        image: "assets/products/utl charge control.png"
+    },
+    {
+        id: 'UTL Solar tubular',
+        title: 'UTL Tubular Battery',
+        brand: 'UTL Solar',
+        specs: 'Heavy-duty tubular battery for extended backup power',
+        image: "assets/products/utl tubular battery.png"
+    },
+    {
+        id: 'UTL Solar inv',
+        title: 'UTL Solar Inverter',
+        brand: 'UTL Solar',
+        specs: 'Solar-compatible inverter for converting DC to AC power',
+        image: "assets/products/utl solar inverter.png"
+    },
+    {
+        id: 'exide tubular',
+        title: 'Exide Tubular Battery',
         brand: 'exide',
-        specs: '150Ah, low maintenance, long backup time',
-        image: null
+        specs: 'Robust tubular battery for reliable backup power solutions',
+        image: "assets/products/exide tubular.jpg"
     },
     {
-        id: 'prod-5',
-        title: 'Premier 330W Bifacial Solar Panel',
-        brand: 'premier',
-        specs: '330W bifacial technology, enhanced durability',
-        image: null
+        id: 'exide inverter',
+        title: 'Exide Inverter',
+        brand: 'exide',
+        specs: 'Dependable power inverter for home and office applications',
+        image: "assets/products/exide inverter.jpg"
     },
     {
-        id: 'prod-6',
-        title: 'Hykon 200Ah Inverter Battery',
+        id: 'luminous inverter',
+        title: 'Luminous Inverter',
+        brand: 'luminous',
+        specs: 'Efficient power backup inverter for uninterrupted electricity',
+        image: "assets/products/luminous inverter.png"
+    },
+    {
+        id: 'luminous tubular',
+        title: 'Luminous Tubular Battery',
+        brand: 'luminous',
+        specs: 'High-performance tubular battery for longer backup times',
+        image: "assets/products/luminous tubular.png"
+    },
+    {
+        id: 'luminous solar inverter',
+        title: 'Luminous Solar Inverter',
+        brand: 'luminous',
+        specs: 'Solar inverter designed for efficient renewable energy conversion',
+        image: "assets/products/luminous solar inverter.png"
+    },
+    {
+        id: 'luminous inverter',
+        title: 'Luminous Inverter',
+        brand: 'luminous',
+        specs: 'Efficient power backup inverter for uninterrupted electricity',
+        image: "assets/products/luminous inverter.png"
+    },
+    {
+        id: 'luminous solar',
+        title: 'Luminous Solar Panel',
+        brand: 'luminous',
+        specs: 'High-efficiency solar panel for sustainable energy generation',
+        image: "assets/products/luminous solar panel.jpg"
+    },
+    {
+        id: 'luminous grid',
+        title: 'Luminous Grid-Tie Inverter',
+        brand: 'luminous',
+        specs: 'Grid-synchronized inverter for feeding solar power to the mains',
+        image: "assets/products/luminous grid tie.png"
+    },
+    {
+        id: 'luminous high',
+        title: 'Luminous Higher KV Inverter',
+        brand: 'luminous',
+        specs: 'High-voltage inverter for commercial and industrial applications',
+        image: "assets/products/luminous higher kv.jpeg"
+    },
+    {
+        id: 'luminous lithium',
+        title: 'Luminous Lithium Battery',
+        brand: 'luminous',
+        specs: 'Lightweight lithium battery with fast charging capabilities',
+        image: "assets/products/luminous lithium.jpg"
+    },
+    {
+        id: 'vguard inv',
+        title: 'V-Guard Inverter',
+        brand: 'vguard',
+        specs: 'Trusted inverter for consistent power backup solutions',
+        image: "assets/products/vguard inverter.jpg"
+    },
+    {
+        id: 'vguard tubular',
+        title: 'V-Guard Tubular Battery',
+        brand: 'vguard',
+        specs: 'Durable tubular battery for extended power backup',
+        image: "assets/products/vguard tubular.jpeg"
+    },
+    {
+        id: 'vguard solar inv',
+        title: 'V-Guard Solar Inverter',
+        brand: 'vguard',
+        specs: 'Solar-powered inverter for clean energy conversion',
+        image: "assets/products/vguard solar inverter.jpg"
+    },
+    {
+        id: 'vguard solar panel',
+        title: 'V-Guard Solar Panel',
+        brand: 'vguard',
+        specs: 'Quality solar panel for efficient sunlight to electricity conversion',
+        image: "assets/products/vguard solar panel.jpg"
+    },
+    {
+        id: 'vguard grid',
+        title: 'V-Guard Grid-Tie Inverter',
+        brand: 'vguard',
+        specs: 'On-grid inverter for connecting solar systems to utility power',
+        image: "assets/products/vguard grid tie.jpg"
+    },
+    {
+        id: 'vguard high',
+        title: 'V-Guard Higher KV Inverter',
+        brand: 'vguard',
+        specs: 'High-capacity inverter for large-scale power requirements',
+        image: "assets/products/vguard inverter.jpg"
+    },
+    {
+        id: 'vguard lithium',
+        title: 'V-Guard Lithium Battery',
+        brand: 'vguard',
+        specs: 'Modern lithium battery for compact and efficient energy storage',
+        image: "assets/products/vguard lithium battery.png"
+    },
+    {
+        id: 'hykon inv',
+        title: 'Hykon Inverter',
         brand: 'hykon',
-        specs: '200Ah capacity, long life, maintenance-free',
-        image: null
+        specs: 'Reliable inverter for continuous power supply',
+        image: "assets/products/hykon inverter.jpg"
+    },
+    {
+        id: 'hykon tubular',
+        title: 'Hykon Tubular Battery',
+        brand: 'hykon',
+        specs: 'Sturdy tubular battery for dependable backup power',
+        image: "assets/products/hykon tubular.jpg"
+    },
+    {
+        id: 'hykon lithium',
+        title: 'Hykon Lithium Battery',
+        brand: 'hykon',
+        specs: 'Next-generation lithium battery for enhanced performance',
+        image: "assets/products/hykon lithium.jpg"
+    },
+    {
+        id: 'hykon solar inv',
+        title: 'Hykon Solar Inverter',
+        brand: 'hykon',
+        specs: 'Solar inverter optimized for renewable energy systems',
+        image: "assets/products/hykon solar inverter.jpg"
+    },
+    {
+        id: 'vguard water',
+        title: 'V-Guard Water Heater',
+        brand: 'solar-water-heater',
+        specs: 'Solar water heating system for eco-friendly hot water supply',
+        image: "assets/products/water heater vguard.jpg"
+    },
+    {
+        id: 'hcl water',
+        title: 'HCL Water Heater',
+        brand: 'solar-water-heater',
+        specs: 'Energy-efficient solar water heater for residential use',
+        image: "assets/products/water heater hcl.jpeg"
+    },
+    {
+        id: 'orange water',
+        title: 'Orange Water Heater',
+        brand: 'solar-water-heater',
+        specs: 'Solar-powered water heating solution for sustainable living',
+        image: "assets/products/water heater orange.jpeg"
+    },
+    {
+        id: 'supreme water',
+        title: 'Supreme Water Heater',
+        brand: 'solar-water-heater',
+        specs: 'High-performance solar water heater for all-weather use',
+        image: "assets/products/water heater supreme.jpg"
+    },
+    {
+        id: 'amaron inv',
+        title: 'Amaron Inverter',
+        brand: 'amaron',
+        specs: 'Premium inverter for efficient power conversion and backup',
+        image: "assets/products/amaron inverter.jpeg"
+    },
+    {
+        id: 'amaron tubular',
+        title: 'Amaron Tubular Battery',
+        brand: 'amaron',
+        specs: 'Long-lasting tubular battery for uninterrupted power supply',
+        image: "assets/products/amaron tubular.jpg"
     }
 ];
 
@@ -189,10 +420,9 @@ const STATE = {
     products: [],
     brands: [...BRANDS],
     companyDetails: {
-        address: '123 Solar Street, Green City, 560001',
-        email: 'info@nassales.com',
-        phone: '+91 1234567890',
-        gst: '22AAAAA0000A1Z5'
+        address: 'Kappalam, Taliparamba , Kannur',
+        email: 'nas.cgcannur@gmail.com',
+        phone: '8606 722 503 , 7034 722 503',
     }
 };
 
