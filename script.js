@@ -191,7 +191,7 @@ const SAMPLE_PRODUCTS = [
         title: 'UTL Lithium Battery',
         brand: 'UTL Solar',
         specs: 'Advanced lithium-ion battery for efficient energy storage',
-        image: "assets/products/UTL Lithium battery.jpg"
+        image: "assets/products/UTL Lithium Battery.jpg"
     },
     {
         id: 'UTL Solar ups',
@@ -872,3 +872,4 @@ Built with ❤️ for sustainable energy solutions
 'color: #10b981; font-size: 14px;',
 'color: #6b7280; font-size: 12px;'
 );
+
