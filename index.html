@@ -16,34 +16,94 @@
 </head>
 <body>
 <!-- Header -->
-<header class="header" id="header">
-    <div class="container">
-        <nav class="nav" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
-            <div class="nav-brand" style="display: flex; align-items: center; gap: 1rem;">
-                <div class="logo-container" id="logoContainer" style="display: flex; align-items: center;">
-                    <!-- Company Logo Image -->
-                    <img src="assets/naz.jpeg" alt="Company Logo" style="width: 50px; height: 50px; object-fit: contain; border-radius: 4px;">
-                </div>
-                <div class="brand-text">
-                    <span class="company-name" style="font-size: 1.5rem; font-weight: 700; font-family: Poppins, sans-serif;">NAS</span>
-                </div>
+<header id="header" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 10px 0;
+">
+    <div style="
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    ">
+        <nav style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        ">
+            <!-- Logo Section - Left -->
+            <div style="
+                display: flex;
+                align-items: center;
+            ">
+                <img src="assets/naz.jpeg" alt="NAS Sales Corporation Logo" style="
+                    height: 80px;
+                    width: auto;
+                    display: block;
+                ">
             </div>
-            <div class="nav-actions" style="display: flex; gap: 1.5rem; align-items: center;">
-                <label class="upload-logo-btn" for="logoUpload" aria-label="Upload company logo" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; padding: 0.5rem 1rem; border-radius: 4px; transition: background-color 0.3s; border: 1px solid #ddd;">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                        <polyline points="17 8 12 3 7 8"/>
-                        <line x1="12" y1="3" x2="12" y2="15"/>
-                    </svg>
-                    <span style="font-size: 0.9rem;">Logo</span>
-                </label>
-                <input type="file" id="logoUpload" accept="image/*" hidden>
-                <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.5rem; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px; font-weight: 500; transition: background-color 0.3s;">Contact Us</a>
+
+            <!-- Contact Button - Right -->
+            <div>
+                <a href="#contact" style="
+                    display: inline-block;
+                    padding: 12px 28px;
+                    background: #FDB913;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 2px 8px rgba(253, 185, 19, 0.3);
+                    white-space: nowrap;
+                "
+                onmouseover="this.style.background='#E5A711'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(253, 185, 19, 0.4)'"
+                onmouseout="this.style.background='#FDB913'; this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(253, 185, 19, 0.3)'">
+                    Contact Us
+                </a>
             </div>
         </nav>
     </div>
 </header>
 
+<!-- Spacer to prevent content from hiding under fixed header -->
+<div style="height: 60px;"></div>
+
+<!-- Mobile Responsive Styles -->
+<style>
+@media (max-width: 768px) {
+    #header {
+        padding: 8px 0 !important;
+    }
+    
+    #header img {
+        height: 32px !important;
+    }
+    
+    #header a[href="#contact"] {
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #header img {
+        height: 28px !important;
+    }
+    
+    #header a[href="#contact"] {
+        padding: 8px 16px !important;
+        font-size: 13px !important;
+    }
+}
+</style>
     <!-- Hero Section -->
     <section class="hero" id="hero" >
         <div class="container">
@@ -389,6 +449,7 @@
 </body>
 
 </html>
+
 
 
 
